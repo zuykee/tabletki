@@ -1,0 +1,379 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto-Regular.eot');
+    src: url('assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('assets/fonts/Roboto-Regular.woff') format('woff'),
+        url('assets/fonts/Roboto-Regular.ttf') format('truetype'),
+        url('assets/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* merriweather-300 - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-300italic - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 300;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-regular - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-italic - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-700 - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-700italic - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 700;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-900 - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-900italic - cyrillic_cyrillic-ext_latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 900;
+    src: url('assets/fonts/merriweather-v30-cyrillic_cyrillic-ext_latin_latin-ext-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto';
+   margin: 0;
+}
+
+
+
+.btn-reset {
+    background-color: transparent;
+    border: none;
+}
+
+.list-reset {
+    list-style-type:none;
+    padding:0;
+}
+
+.btn-regular {
+    background-color: #620F5F;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 13px 25px;
+    border-radius: 56px;
+}
+
+.btn-stroke {
+    background-color: transparent;
+    color: #ffffff;
+    border:1px solid #ffffff;
+    font-size:18px;
+    padding: 21px 80px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.fixed-container {
+
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header {
+    position:fixed;
+    width:100%;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+    padding-top: 28px;
+}
+
+.logo-container {
+    padding-top: 3px;
+}
+
+.header__btn-container {
+    display:flex;
+    align-items: center;
+}
+
+.nav-btn {padding-left: 46px;}
+
+.packs-container {
+    width: 41%;
+    /* align-self: flex-end; */
+    margin-top: 158px;
+}
+
+.slider-items {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    margin: 0 auto;
+    /* margin-top: 173px; */
+    max-width: 465px;
+    position: relative;
+    transform: none !important;
+}
+
+.slider-item {
+    /* height: 301px; */
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    /* width:330px; */
+    z-index: 0;
+    /* border-radius: 15px; */
+    /* background-size: contain; */
+    min-width: 465px;
+    left: 175px;
+    top: 6px;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 52px 0;
+    /* height: 100px; */
+}
+
+
+.slider-navigation__btn {
+    padding: 36px;
+    margin: 0px 14px;
+    background-image: url('assets/img/slider-btn.svg');
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    transform: translate(-26px,2px);
+}
+
+.nav-btn__next {
+    /* transform: rotate(180deg); */
+    transform: translate(-105px, -3px) rotate(180deg);
+}
+
+.swiper-slide-active {
+    z-index:10;
+    /* top: 86%; */
+    /* left: 265%; */
+    left: -57px;
+    top: 90px;
+}
+
+.swiper-slide-next {
+     top: 21px;
+     left: -247px;
+     }
+
+.swiper-slide-prev {
+    left: 176px;
+    top: 6px;
+}
+
+.vein {
+    width: 100%;
+}
+
+
+.vein path {
+  
+    animation: blob 5s infinite alternate ease-in-out;
+  
+  }
+  
+  @keyframes blob {
+    0% {
+      d: path("M1150 30.6123C1001 -139.5 842.5 480.768 441.962 331.552C303.655 280.027 114.83 282.865 -2 331.552V424.142C-2 424.142 441.962 424.142 606.5 635.5C771.038 846.858 1440 597 1440 597V115.9C1322.5 59.0416 1233.5 125.947 1150 30.6123Z");
+    }
+    50% {
+      d: path("M1150 8.61221C843.181 86.7086 953.038 408.216 552.5 259C414.193 207.475 114.83 260.865 -2 309.552V401C-2 401 583.5 250.5 883 603.5C1182.5 956.5 1440 575 1440 575V93.9001C1322.5 37.0415 1272.82 -22.6491 1150 8.61221Z");
+    }
+    100% {
+      d: path("M1150 8.61221C843.181 86.7086 842.5 458.768 441.962 309.552C303.655 258.027 136 173 -2 309.552V402.142C-2 402.142 398.5 381 606.5 613.5C814.5 846 1440 575 1440 575V93.9001C1322.5 37.0415 1272.82 -22.6491 1150 8.61221Z");
+    }
+  }
+
+.section-container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+  .welcome-section {
+    /* background-image: url('assets/fonts/assets/img/vein.svg'); */
+    position:relative;
+    width:100%;
+    padding-top: 75px;
+  }
+
+  .vein-container {
+    position:absolute;
+    z-index:-1;
+    
+  }
+
+  .page-header {
+    font-family: 'Merriweather';
+    
+    color: #000000;
+  }
+
+  .main-info {
+    width:31%;
+  }
+
+  .main-header {
+    font-size: 55px;
+    line-height: 1.01;
+    padding-top: 7px;
+  }
+
+ .main-info-nav {
+    padding-top: 119px;
+ }
+
+ .main-info-nav-item {
+    padding: 15px 0;
+ }
+
+ .main-info-nav-link {
+    display:flex;
+    align-items: center;
+ }
+
+ .main-info-span {
+    /* display: block; */
+    padding-left: 29px;
+    font-size: 18px;
+    /* font-weight: 500; */
+    color: #590D56;
+ }
+
+ .welcome-disclaimer {
+    font-size: 32px;
+    font-weight: 200;
+    position:absolute;
+    text-transform:uppercase;
+    background-color: #f9f9f9;
+    color:#242424;
+    border-radius: 18px;
+    padding: 30px 56px 12px;
+    top: 78.5%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+ }
+
+ .disclaimer-btn {
+    font-size: 30px;
+    font-weight: 100;
+ }
+
+ .discount-container {
+  border-top: 2px solid #47093E;
+  border-bottom: 2px solid #47093E;
+  margin-top: 115px;
+  padding: 13px 0 20px;
+ }
+
+ .discount-text {
+  color: #590D56;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight:300;
+ }
+
+ .features-container {
+  width:100%;
+  padding-top: 86px;
+ }
+
+ .features-list {
+  display:flex;
+  justify-content:space-between;
+  /* margin-top: 7px; */
+ }
+
+ .feature-item {
+  display:flex;
+  justify-content:flex-start;
+  padding:0 20px;
+ }
+
+ .feature-item:first-child {
+  padding-left:0;
+ }
+
+ .feature-item:last-child {
+  padding-right: 19px;
+  width: 33.5%;
+  justify-content: space-between;
+ }
+
+ .feature-header {
+  font-size:16px;
+  padding-left:30px;
+  line-height: 1.7;
+  margin-top: 6px;
+ }
+
+ .feature-info {
+  align-self: center;
+  /* padding-left:40px; */
+ }
+
+ .about-general {
+  display: flex;
+  justify-content:space-between;
+ }
